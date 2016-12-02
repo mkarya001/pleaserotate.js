@@ -174,9 +174,11 @@
         setVisibility(triggerOn);
 
     }
-
+    
+    var windowint = window.innerWidth;
+    
     function isPortrait(){
-        return ( window.innerWidth < window.innerHeight);
+      return ( window.innerWidth < window.innerHeight || windowint == window.innerWidth);
     }
 
     function checkOrientationChange(){
